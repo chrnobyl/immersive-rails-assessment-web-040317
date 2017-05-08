@@ -1,0 +1,9 @@
+<%= form_for(@session[:user_id]) do |f| %>
+  <%= f.label :username %>
+  <%= f.text_field :username %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password_digest %>
+
+  <%= f.submit "Login"%>
+<% end %>
